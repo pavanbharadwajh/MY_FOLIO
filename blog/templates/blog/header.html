@@ -1,0 +1,113 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Studio</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="{%static 'thumbnail-gallery.css' %}">
+    <link rel="stylesheet" href="{%static 'head.css' %}">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">HOME</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/folio">FOLIO</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <hr>
+    <hr>
+    <div class="container">
+    <section class="bg-1">
+    <div class="container text-center ">
+       <h3>pavan bharadwaj</h3>
+      <p class="parch"><strong> I love to Click ..!</strong> </p>
+    </div>
+    </section>
+    </div>
+
+      <div class="container gallery-container">
+        <h1 style="font-family: Monospaced">Welcome to the Studio</h1>
+          <p class="page-description text-center" style="font-family: Prakrta">bharadwaj clicks</p>
+          <div class="tz-gallery">
+                 <div class="row">
+
+                   {% block content %}
+                   {% endblock %}
+
+                </div>
+            </div>
+        </div>
+
+    <div class="container">
+      <h3 class="text-center" style="font-family: 'Adobe Garamond Pro Bold' "><strong>Contact</strong></h3>
+
+      <div class="row test">
+          <div class="col-md-4" style=" font-family: 'Cambria Math'">
+          <p style="font-size: 20px">Liked My Work? Drop a note.</p>
+          <p><span class="glyphicon glyphicon-map-marker"></span>Chicago, US</p>
+          <p><span class="glyphicon glyphicon-phone"></span>Phone: +1 3124680832</p>
+          <p><span class="glyphicon glyphicon-envelope"></span>Email: <a href="mailto:pavanbharadwajhms@gmail.com">pavanbharadwajhms@gmail.com</a></p>
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-sm-6 form-group">
+              <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+            </div>
+            <div class="col-sm-6 form-group">
+              <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+            </div>
+          </div>
+          <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+          <div class="row">
+            <div class="col-md-12 form-group">
+              <button class="btn pull-right" type="submit" id="note">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script>baguetteBox.run('.tz-gallery');</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+          <!--<script>-->
+            <!--$#note{-->
+                <!--function(e) {-->
+                  <!--e.onClick(-->
+                      <!--var -->
+                      <!---->
+                  <!--)-->
+
+                <!--}-->
+            <!--}-->
+          <!--</script>-->
+  </body>
+  </html>
+
+
+
