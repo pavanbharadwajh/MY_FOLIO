@@ -4,7 +4,7 @@ from .models import Post
 # Register your models here.
 
 class PostModelAdmin(admin.ModelAdmin):
-    list_display = ['title','description','date']
+    list_display = ['title','date']
     class Meta:
         model:Post
 
