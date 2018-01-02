@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="{%static 'thumbnail-gallery.css' %}">
     <link rel="stylesheet" href="{%static 'head.css' %}">
 
+
+    <!-- AOS Library for animation -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -39,20 +43,20 @@
 
     <hr>
     <hr>
-    <div class="container">
+    <div class="jumbotron-fluid">
     <section class="bg-1">
     <div class="container text-center ">
        <h3>pavan bharadwaj</h3>
-      <p class="parch"><strong> I love to Click ..!</strong> </p>
+      <p class="parch" data-aos="fade-up" data-aos-duration="1000"><strong> I love to Click ..!</strong> </p>
     </div>
     </section>
     </div>
 
       <div class="container gallery-container">
-        <h1 style="font-family: Monospaced">Welcome to the Studio</h1>
-          <p class="page-description text-center" style="font-family: Prakrta">bharadwaj clicks</p>
+        <h1 style="font-family: Monospaced" data-aos="flip-right" data-aos-duration="800">Welcome to the Studio</h1>
+          <p class="page-description text-center" style="font-family: Prakrta" data-aos="zoom-in-down" data-aos-duration="1000">bharadwaj clicks</p>
           <div class="tz-gallery">
-                 <div class="row">
+                 <div class="row" data-aos="zoom-in-right"  data-aos-duration="1000">
 
                    {% block content %}
                    {% endblock %}
@@ -61,39 +65,51 @@
             </div>
         </div>
 
+<div class="well" data-aos="fade-down" data-aos-duration="1000">
+     <hr width="90%" size="10" align="center">
     <div class="container">
       <h3 class="text-center" style="font-family: 'Adobe Garamond Pro Bold' "><strong>Contact</strong></h3>
 
+
       <div class="row test">
-          <div class="col-md-4" style=" font-family: 'Cambria Math'">
+          <div class="col" style=" font-family: 'Cambria Math'" align="center" >
           <p style="font-size: 20px">Liked My Work? Drop a note.</p>
           <p><span class="glyphicon glyphicon-map-marker"></span>Chicago, US</p>
           <p><span class="glyphicon glyphicon-phone"></span>Phone: +1 3124680832</p>
           <p><span class="glyphicon glyphicon-envelope"></span>Email: <a href="mailto:pavanbharadwajhms@gmail.com">pavanbharadwajhms@gmail.com</a></p>
         </div>
-        <div class="col-md-8">
-          <div class="row">
-            <div class="col-sm-6 form-group">
-              <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-            </div>
-            <div class="col-sm-6 form-group">
-              <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-            </div>
-          </div>
-          <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
-          <div class="row">
-            <div class="col-md-12 form-group">
-              <button class="btn pull-right" type="submit" id="note">Send</button>
-            </div>
-          </div>
-        </div>
+{#        <div class="col-md-8">#}
+{#          <div class="row">#}
+{#            <div class="col-sm-6 form-group">#}
+{#              <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>#}
+{#            </div>#}
+{#            <div class="col-sm-6 form-group">#}
+{#              <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>#}
+{#            </div>#}
+{#          </div>#}
+{#          <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>#}
+{#          <div class="row">#}
+{#            <div class="col-md-12 form-group">#}
+{#              <button class="btn pull-right" type="submit" id="note">Send</button>#}
+{#            </div>#}
+{#          </div>#}
+{#        </div>#}
       </div>
+      </div>
+    </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
     <script>baguetteBox.run('.tz-gallery');</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- AOS library -->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
 
           <!--<script>-->
             <!--$#note{-->
