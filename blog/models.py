@@ -1,6 +1,5 @@
 # Create your models here.
 from django.db import models
-from . import views
 
 class Post(models.Model):
     title = models.CharField(max_length=255)

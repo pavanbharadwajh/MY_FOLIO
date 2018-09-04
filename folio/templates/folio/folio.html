@@ -1,395 +1,415 @@
-<!DOCTYPE html>
-{% load staticfiles %}
+<!DOCTYPE html> {% load staticfiles %}
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Pavan - Folio</title>
+  <title>Pavan - Folio</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href=" {% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href=" {% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
-    <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <!-- Custom fonts for this template -->
+  <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+    rel='stylesheet' type='text/css'>
 
-    <!-- Plugin CSS -->
-    <link href="{% static 'vendor/magnific-popup/magnific-popup.css' %}" rel="stylesheet">
+  <!-- Plugin CSS -->
+  <link href="{% static 'vendor/magnific-popup/magnific-popup.css' %}" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="{% static 'css/creative.min.css' %}" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/creative.min.css' %}" rel="stylesheet">
 
-    <!-- Awsome Button-->
-    <link rel="import" href="{% static 'html/awesome-button.html' %}">
+  <!-- Awsome Button-->
+  <link rel="import" href="{% static 'html/awesome-button.html' %}">
 
-    <!-- AOS Library for animation -->
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <!-- AOS Library for animation -->
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 
-    <!-- Google Map -->
-      <!-- <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'> -->
-      <!-- <link rel="stylesheet" href="{% static 'css/reset.css' %}"> --> <!-- CSS reset -->
-     <!--  <link rel="stylesheet" href="{% static 'css/style.css' %}"> --> <!-- Resource style -->
-     <!--  <script src="{% static 'js/modernizr.js' %}"></script>  --><!-- Modernizr -->
+  <!-- Google Map -->
+  <!-- <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'> -->
+  <!-- <link rel="stylesheet" href="{% static 'css/reset.css' %}"> -->
+  <!-- CSS reset -->
+  <!--  <link rel="stylesheet" href="{% static 'css/style.css' %}"> -->
+  <!-- Resource style -->
+  <!--  <script src="{% static 'js/modernizr.js' %}"></script>  -->
+  <!-- Modernizr -->
 
-    </head>
+</head>
 
-  <body id="page-top">
+<body id="page-top">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand" href="/">Home</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="/">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-       <a class="navbar-brand js-scroll-trigger" href="/studio/">Studio</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#page-top">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#social">Check-it-out</a>
-            </li>
+      <a class="navbar-brand js-scroll-trigger" href="/studio/">Studio</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#page-top">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#social">Check-it-out</a>
+          </li>
 
-           <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-          </ul>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="masthead text-center text-white d-flex">
+    <div class="container my-auto">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h1 class="text-uppercase">
+            <strong>PAVAN BHARADWAJ HOLENARASIPURA</strong>
+          </h1>
+          <hr>
+        </div>
+        <div class="col-lg-8 mx-auto">
+          <p class="text-faded mb-5"> I am Enthusiast who focus on learning new technologies, try to understand and implement
+            them. As a photographer by passion I love to travel and explore as photography and travelling goes hand in hand.
+          </p>
+          <hr>
+          <img class="round" src="{% static 'img/Pavan.png'%}" width="150px" height="180px">
+          <!-- <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a> -->
         </div>
       </div>
-    </nav>
+    </div>
+  </header>
 
-    <header class="masthead text-center text-white d-flex">
-      <div class="container my-auto">
-        <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <h1 class="text-uppercase">
-              <strong>PAVAN BHARADWAJ HOLENARASIPURA</strong>
-            </h1>
-            <hr>
-          </div>
-          <div class="col-lg-8 mx-auto">
-            <p class="text-faded mb-5"> I am Enthusiast who focus on learning new technologies, try to understand and implement them. As a photographer by passion I love to travel and explore as photography and travelling goes hand in hand.
-            </p>
-            <hr>
-            <img class="round" src="{% static 'img/Pavan.png'%}"  width="150px" height="180px">
-            <!-- <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a> -->
-          </div>
+  <hr width="50%" size="10" align="center">
+
+  <section class="p-0" id="education">
+    <h2 color="#fff" align="center" data-aos="fade-down" data-aos-duration="1000">EDUCATION</h2>
+    <hr>
+    <div class="container-fluid p-0">
+      <div class="row">
+        <div class="column" data-aos-offset="300">
+          <a class="portfolio-box img-responsive" href="{% static 'img/portfolio/fullsize/UIC.png' %}" width="250px" height="250px">
+            <img class="img-fluid img-responsive" src="{% static 'img/portfolio/fullsize/UIC.png' %}" alt="" width="250px" height="250px">
+            <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                <div class="project-category text-faded">
+                  <h2>University of Illinois at Chicago</h2>
+                </div>
+                <div class="project-name">
+                  <h6>Master of Science in Computer Science.<br> Aug 2017 - May 2019 (Expected) </h6>
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
-      </div>
-    </header>
 
-    <hr width="50%" size="10" align="center">
-
-    <section class="p-0" id="education">
-      <h2 color = "#fff" align="center" data-aos="fade-down" data-aos-duration="1000">EDUCATION</h2>
-      <hr>
-      <div class="container-fluid p-0">
-        <div class="row" >
-          <div class="column" data-aos-offset="300">
-            <a class="portfolio-box img-responsive" href="{% static 'img/portfolio/fullsize/UIC.png' %}" width="250px" height="250px" >
-              <img class="img-fluid img-responsive" src="{% static 'img/portfolio/fullsize/UIC.png' %}" alt="" width="250px" height="250px">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    <h2>University of Illinois at Chicago</h2>                  </div>
-                  <div class="project-name">
-                    <h6>Master of Science in Computer Science.<br>
-                    Aug 2017 - May 2019 (Expected) </h6>
-                  </div>
+        <div class="column" data-aos-offset="300">
+          <a class="portfolio-box img-responsive" href="{% static 'img/portfolio/fullsize/VTU.png' %}" width="250px" height="250px">
+            <img class="img-fluid img-responsive" src="{% static 'img/portfolio/fullsize/VTU.png' %}" alt="" width="250px" height="250px">
+            <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                <div class="project-category text-faded">
+                  <h2>Visvesvaraya Technological University, India</h2>
+                </div>
+                <div class="project-name">
+                  <h6>Bachelors of Engineering in Computer Science & Engineering.<br> Aug 2012 – July 2016</h6>
                 </div>
               </div>
-            </a>
-          </div>
-
-          <div class="column" data-aos-offset="300">
-            <a class="portfolio-box img-responsive" href="{% static 'img/portfolio/fullsize/VTU.png' %}"  width="250px" height="250px">
-              <img class="img-fluid img-responsive" src="{% static 'img/portfolio/fullsize/VTU.png' %}"  alt="" width="250px" height="250px">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    <h2>Visvesvaraya Technological University, India</h2>                  </div>
-                  <div class="project-name">
-                    <h6>Bachelors of Engineering in Computer Science & Engineering.<br>
-                    Aug 2012 – July 2016</h6>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-           <div class="column">
-            <a class="portfolio-box img-responsive" href="{% static 'img/portfolio/fullsize/Vijaya.png' %}"  width="250px" height="250px">
-              <img class="img-fluid img-responsive" src="{% static 'img/portfolio/fullsize/Vijaya.png' %}"  alt="" width="250px" height="250px">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    <h2>Vijaya Education Institute Trust, India</h2>                  </div>
-                  <div class="project-name">
-                    <h6>Pre - University and High School<br>
-                    Aug 2008 – Mar 2012</h6>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
+            </div>
+          </a>
         </div>
+
+        <div class="column">
+          <a class="portfolio-box img-responsive" href="{% static 'img/portfolio/fullsize/Vijaya.png' %}" width="250px" height="250px">
+            <img class="img-fluid img-responsive" src="{% static 'img/portfolio/fullsize/Vijaya.png' %}" alt="" width="250px" height="250px">
+            <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                <div class="project-category text-faded">
+                  <h2>Vijaya Education Institute Trust, India</h2>
+                </div>
+                <div class="project-name">
+                  <h6>Pre - University and High School<br> Aug 2008 – Mar 2012</h6>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="bg-primary" id="experience">
-      <div class="container" data-animate="fadeInUp">
-        <div class="row">
-          <div class="col-lg-10 mx-auto text-center" >
-            <p class="text-white" data-aos="fade-down" data-aos-duration="1000"><i>A Graduate in Computer Science and Engineering, currently pursuing masters in Computer Science. An experienced Quality Assurance Engineer with a demonstrated history of working in the computer software industry</i></p>
+  <section class="bg-primary" id="experience">
+    <div class="container" data-animate="fadeInUp">
+      <div class="row">
+        <div class="col-lg-10 mx-auto text-center">
+          <p class="text-white" data-aos="fade-down" data-aos-duration="1000"><i>A Graduate in Computer Science and Engineering,
+              currently pursuing masters in Computer Science. An experienced Quality Assurance Engineer with a demonstrated
+              history of working in the computer software industry</i></p>
 
-            <h2 class="section-heading text-white" data-aos="zoom-in" data-aos-duration="1000">Professional Experience</h2>
-            <hr class="light my-4">
-            <div data-aos="fade-right" data-aos-duration="2000">
+          <h2 class="section-heading text-white" data-aos="zoom-in" data-aos-duration="1000">Professional Experience</h2>
+          <hr class="light my-4">
+          <div data-aos="fade-right" data-aos-duration="2000">
             <button class="btn btn-light btn-xl"> Quess Corp Limited</button>
             <h6 align="text-center" class="text-faded mb-4"> Nov 2016 - July 2017</h6>
-            <p class="text-faded mb-4">Worked as a Quality Assurance Engineer for the client Micro Focus, testing for validation, verification, and enhancement of the product.</p>
-            <div id="list2" >
-            <ol >
-              <li text-align>
-                Developed test plans that address areas such as database impacts, software scenarios, regression testing, negative testing, error or bug retests, or usability.
-              </li>
-              <li>
-                Document software defects, using “Bugzilla”, analyze and provide defects to software developers.
-              </li>
-              <li>
-                Reviewed product requirements and design specifications to develop release and test plans for Systems Management Products in an Agile Software Development Environment.
-              </li>
-              <li>
-                Investigated customer problems referred by technical support.
-              </li>
-            </ol>
-          </div>
+            <p class="text-faded mb-4">Worked as a Quality Assurance Engineer for the client Micro Focus, testing for validation,
+              verification, and enhancement of the product.</p>
+            <div id="list2">
+              <ol>
+                <li text-align>
+                  Developed test plans that address areas such as database impacts, software scenarios, regression testing, negative testing,
+                  error or bug retests, or usability.
+                </li>
+                <li>
+                  Document software defects, using “Bugzilla”, analyze and provide defects to software developers.
+                </li>
+                <li>
+                  Reviewed product requirements and design specifications to develop release and test plans for Systems Management Products
+                  in an Agile Software Development Environment.
+                </li>
+                <li>
+                  Investigated customer problems referred by technical support.
+                </li>
+              </ol>
             </div>
-            <div data-aos="fade-right" data-aos-duration="1500">
+          </div>
+          <div data-aos="fade-right" data-aos-duration="1500">
             <hr class="light my-4">
             <button class="btn btn-light btn-xl"> Sequell.Inc</button>
             <h6 align="text-center" class="text-faded mb-4"> Jan 2016 - Mar 2016</h6>
-            <p class="text-faded mb-4">Interned in Software Development.<br>
-            Designed, Developed, and Mantained client websites. </p>
+            <p class="text-faded mb-4">Interned in Software Development.<br> Designed, Developed, and Mantained client websites.
+            </p>
           </div>
 
           <div data-aos="fade-right" data-aos-duration="1500">
             <h2 class="section-heading text-white">Volunteer Experience</h2>
             <hr class="light my-4">
-            <button class="btn btn-light btn-xl">  KWAB</button>
-            <h6 align="text-center" class="text-faded mb-4"> Aug 2016 – Oct 2016</h4>
-            <p class="text-faded mb-4">The Karnataka Welfare Association for the Blind, India</p>
-            <div id="list2" >
-            <ol >
-              <li>
-              Coordinated and led work parties that collected give-away clothes and other gently used household items useful.
-              </li>
-              <li>
-                Conceptualized and successfully launched an initiative, where the locals were encouraged to celebrate their birthdays among the blind.
-              </li>
-            </ol>
-          </div>
-            </div>
+            <button class="btn btn-light btn-xl"> KWAB</button>
+            <h6 align="text-center" class="text-faded mb-4"> Aug 2016 – Oct 2016
+              </h4>
+              <p class="text-faded mb-4">The Karnataka Welfare Association for the Blind, India</p>
+              <div id="list2">
+                <ol>
+                  <li>
+                    Coordinated and led work parties that collected give-away clothes and other gently used household items useful.
+                  </li>
+                  <li>
+                    Conceptualized and successfully launched an initiative, where the locals were encouraged to celebrate their birthdays among
+                    the blind.
+                  </li>
+                </ol>
+              </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section id="skills">
-      <div class="container-fluid">
-        <div class="col-sm-12 text-center">
-            <h2 class="section-heading" data-aos="fade-down" data-aos-duration="1000">SkillSet</h2>
-              <hr class="my-4">
-
-        <div class="row">
-        <div class="col-sm-6">
-          <div class="skill-item">
-                <div data-aos="zoom-in-right"  data-aos-duration="2000"> Python
-                   <div class="progress">
-                    <div class="progress-bar progress-bar-skill2" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                      <span class="sr-only">75</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-
-             <div class="col-sm-6">
-              <div class="skill-item" >
-                <div data-aos="zoom-in-right" data-aos-duration="2000"> Java
-                   <div class="progress">
-                    <div class="progress-bar progress-bar-skill2" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                      <span class="sr-only">60</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-             <div class="col-sm-6">
-              <div class="skill-item">
-                <div data-aos="zoom-in-right"  data-aos-duration="2000"> HTML&CSS
-                   <div class="progress">
-                    <div class="progress-bar progress-bar-skill2" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                      <span class="sr-only">65</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-6">
-              <div class="skill-item">
-                <div data-aos="zoom-in-right" data-aos-duration="2000"> SQL
-                   <div class="progress">
-                    <div class="progress-bar progress-bar-skill2" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-                      <span class="sr-only">60</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-             <div class="col-sm-6">
-              <div class="skill-item">
-                <div data-aos="zoom-in-right"  data-aos-duration="2000"> Javascript
-                   <div class="progress">
-                    <div class="progress-bar progress-bar-skill2" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
-                      <span class="sr-only">50</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-             <div class="col-sm-6">
-              <div class="skill-item">
-                <div data-aos="zoom-in-right" data-aos-duration="2000"> Testing
-                   <div class="progress">
-                    <div class="progress-bar progress-bar-skill2" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                      <span class="sr-only">65</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
       </div>
     </div>
-    </section>
+  </section>
 
+  <section id="skills">
+    <div class="container-fluid">
+      <div class="col-sm-12 text-center">
+        <h2 class="section-heading" data-aos="fade-down" data-aos-duration="1000">SkillSet</h2>
+        <hr class="my-4">
 
-    <section class="bg-dark text-white" id="social">
-      <div class="container text-center">
-        <h2 class="mb-4" data-aos="fade-down" data-aos-duration="1000">Check Out My Online Profiles</h2>
- <!--        <a class="btn btn-light btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a> -->
-        <awesome-button type="facebook" href ="https://www.facebook.com/holenarasipura.pavan"> "  Hi..!  "</awesome-button>
-        <awesome-button type="github" href="https://github.com/pavanbharadwajh/">Ola..!</awesome-button>
-        <awesome-button type="linkedin" href="https://www.linkedin.com/in/pavan-bharadwaj-holenarasipura//">Namaste..!</awesome-button>
-        <awesome-button type="external" href="https://www.flickr.com/photos/138581669@N03/">Showcase..!</awesome-button>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">Let's Get In Touch!</h2>
-            <hr class="my-4">
-            <p class="mb-5" data-aos="fade-down" data-aos-duration="500">
-              Ask for My Resume..!</p>
+          <div class="col-sm-6">
+            <div class="skill-item">
+              <div data-aos="zoom-in-right" data-aos-duration="2000"> Python
+                <div class="progress">
+                  <div class="progress-bar progress-bar-skill2" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                    style="width: 70%;">
+                    <span class="sr-only">75</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 ml-auto text-center">
-            <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
-            <p>(+1) 312-468-0832</p>
+
+          <div class="col-sm-6">
+            <div class="skill-item">
+              <div data-aos="zoom-in-right" data-aos-duration="2000"> Java
+                <div class="progress">
+                  <div class="progress-bar progress-bar-skill2" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                    style="width: 60%;">
+                    <span class="sr-only">60</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-lg-4 mr-auto text-center">
-            <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
-            <p>
-              <a href="mailto:pavanbharadwajhms@gmail.com">pavanbharadwajhms@gmail.com</a>
-            </p>
+
+          <div class="col-sm-6">
+            <div class="skill-item">
+              <div data-aos="zoom-in-right" data-aos-duration="2000"> HTML&CSS
+                <div class="progress">
+                  <div class="progress-bar progress-bar-skill2" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                    style="width: 60%;">
+                    <span class="sr-only">65</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <div class="col-sm-6">
+            <div class="skill-item">
+              <div data-aos="zoom-in-right" data-aos-duration="2000"> SQL
+                <div class="progress">
+                  <div class="progress-bar progress-bar-skill2" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                    style="width: 50%;">
+                    <span class="sr-only">60</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="skill-item">
+              <div data-aos="zoom-in-right" data-aos-duration="2000"> Javascript
+                <div class="progress">
+                  <div class="progress-bar progress-bar-skill2" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                    style="width: 40%;">
+                    <span class="sr-only">50</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="skill-item">
+              <div data-aos="zoom-in-right" data-aos-duration="2000"> Testing
+                <div class="progress">
+                  <div class="progress-bar progress-bar-skill2" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                    style="width: 60%;">
+                    <span class="sr-only">65</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <section class="bg-dark text-white" id="social">
+    <div class="container text-center">
+      <h2 class="mb-4" data-aos="fade-down" data-aos-duration="1000">Check Out My Online Profiles</h2>
+      <!--        <a class="btn btn-light btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a> -->
+      <awesome-button type="facebook" href="https://www.facebook.com/holenarasipura.pavan"> " Hi..! "</awesome-button>
+      <awesome-button type="github" href="https://github.com/pavanbharadwajh/">Ola..!</awesome-button>
+      <awesome-button type="linkedin" href="https://www.linkedin.com/in/pavan-bharadwaj-holenarasipura//">Namaste..!</awesome-button>
+      <awesome-button type="external" href="https://www.flickr.com/photos/138581669@N03/">Showcase..!</awesome-button>
+    </div>
+  </section>
 
-    <!-- Plugin JavaScript -->
-    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
-    <script src="{% static 'vendor/scrollreveal/scrollreveal.min.js' %}"></script>
-    <script src="{% static 'vendor/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="section-heading">Let's Get In Touch!</h2>
+          <hr class="my-4">
+          <p class="mb-5" data-aos="fade-down" data-aos-duration="500">
+            Ask for My Resume..!</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 ml-auto text-center">
+          <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
+          <p>(+1) 312-468-0832</p>
+        </div>
+        <div class="col-lg-4 mr-auto text-center">
+          <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
+          <p>
+            <a href="mailto:pavanbharadwajhms@gmail.com">pavanbharadwajhms@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Custom scripts for this template -->
-    <script src="{% static 'js/creative.min.js' %}"></script>
 
-    <!-- Awsome Button-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.3/webcomponents.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
-    <!-- AOS library -->
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+  <script src="{% static 'vendor/scrollreveal/scrollreveal.min.js' %}"></script>
+  <script src="{% static 'vendor/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
 
-    <script>
-      AOS.init();
-    </script>
+  <!-- Custom scripts for this template -->
+  <script src="{% static 'js/creative.min.js' %}"></script>
 
-    <script>
-        $(document).ready(function(){
-          // Initialize Tooltip
-          $('[data-toggle="tooltip"]').tooltip();
+  <!-- Awsome Button-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.3/webcomponents.min.js"></script>
 
-          // Add smooth scrolling to all links in navbar + footer link
-          $(".navbar a, footer a[href='#page-top']").on('click', function(event) {
+  <!-- AOS library -->
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    $(document).ready(function () {
+      // Initialize Tooltip
+      $('[data-toggle="tooltip"]').tooltip();
 
-              // Prevent default anchor click behavior
-              event.preventDefault();
+      // Add smooth scrolling to all links in navbar + footer link
+      $(".navbar a, footer a[href='#page-top']").on('click', function (event) {
 
-              // Store hash
-              var hash = this.hash;
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
 
-              // Using jQuery's animate() method to add smooth page scroll
-              // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-              $('html, body').animate({
-                scrollTop: $(hash).offset().top
-              }, 900, function(){
+          // Prevent default anchor click behavior
+          event.preventDefault();
 
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-              });
-            } // End if
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 900, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
           });
-        })
-    </script>
+        } // End if
+      });
+    })
+  </script>
 
-  </body>
+</body>
+
 </html>

@@ -5,6 +5,7 @@
 			outline-style: none;
 			outline-width: 0;
 		}
+
 		.awesome-button.progress em:before,
 		.awesome-button.progress em:after,
 		.awesome-button span:before,
@@ -17,6 +18,7 @@
 			position: absolute;
 			display: block;
 		}
+
 		.awesome-button {
 			-moz-box-sizing: border-box;
 			-webkit-box-sizing: border-box;
@@ -39,45 +41,53 @@
 			transition: opacity .1s ease-out;
 			border: none;
 		}
-		.awesome-button.v_{
+
+		.awesome-button.v_ {
 			opacity: 1;
 		}
+
 		.awesome-button.left em {
 			-moz-transform: skewY(-1deg);
 			-ms-transform: skewY(-1deg);
 			-webkit-transform: skewY(-1deg);
 			transform: skewY(-1deg);
 		}
+
 		.awesome-button.left:before {
 			-moz-transform: skewY(1deg) translateY(-1px);
 			-ms-transform: skewY(1deg) translateY(-1px);
 			-webkit-transform: skewY(1deg) translateY(-1px);
 			transform: skewY(1deg) translateY(-1px);
 		}
+
 		.awesome-button.right em {
 			-moz-transform: skewY(1deg);
 			-ms-transform: skewY(1deg);
 			-webkit-transform: skewY(1deg);
 			transform: skewY(1deg);
 		}
+
 		.awesome-button.right:before {
 			-moz-transform: skewY(-1deg) translateY(-1px);
 			-ms-transform: skewY(-1deg) translateY(-1px);
 			-webkit-transform: skewY(-1deg) translateY(-1px);
 			transform: skewY(-1deg) translateY(-1px);
 		}
+
 		.awesome-button.middle em {
 			-moz-transform: translateY(1px);
 			-ms-transform: translateY(1px);
 			-webkit-transform: translateY(1px);
 			transform: translateY(1px);
 		}
+
 		.awesome-button.middle:before {
 			-moz-transform: translateY(-1px);
 			-ms-transform: translateY(-1px);
 			-webkit-transform: translateY(-1px);
 			transform: translateY(-1px);
 		}
+
 		.awesome-button.progress em:before {
 			content: "Wait";
 			color: rgba(255, 255, 255, 0.75);
@@ -91,6 +101,7 @@
 			-webkit-transition: -webkit-transform 0.2s ease-out, opacity 0.1s ease-out;
 			transition: transform 0.2s ease-out, opacity 0.1s ease-out;
 		}
+
 		.awesome-button.progress em:after {
 			content: attr(data-status);
 			color: rgba(255, 255, 255, 0.75);
@@ -104,6 +115,7 @@
 			-webkit-transition: -webkit-transform 0.2s ease-out, opacity 0.1s ease-out;
 			transition: transform 0.2s ease-out, opacity 0.1s ease-out;
 		}
+
 		.awesome-button.active em {
 			-moz-transition: -moz-transform 0.175s ease-out, background 0.2s ease-out, color 0.14s ease-out;
 			-o-transition: -o-transform 0.175s ease-out, background 0.2s ease-out, color 0.14s ease-out;
@@ -116,9 +128,11 @@
 			background-color: rgba(0, 0, 0, 0.1) !important;
 			color: rgba(255, 255, 255, 0.85);
 		}
-		.awesome-button.active .i-svg{
+
+		.awesome-button.active .i-svg {
 			opacity: 0.85;
 		}
+
 		.awesome-button.active em:before {
 			opacity: 1;
 			-moz-transform: translateY(0);
@@ -126,12 +140,14 @@
 			-webkit-transform: translateY(0);
 			transform: translateY(0);
 		}
+
 		.awesome-button.active:before {
 			-moz-transform: translateY(-3px);
 			-ms-transform: translateY(-3px);
 			-webkit-transform: translateY(-3px);
 			transform: translateY(-3px);
 		}
+
 		.awesome-button.start span:after {
 			-moz-transition: width 5.5s ease-out;
 			-o-transition: width 5.5s ease-out;
@@ -139,6 +155,7 @@
 			transition: width 5.5s ease-out;
 			width: 90%;
 		}
+
 		.awesome-button.end span:after {
 			-moz-transition: width 0.4s ease-out;
 			-o-transition: width 0.4s ease-out;
@@ -146,6 +163,7 @@
 			transition: width 0.4s ease-out;
 			width: 100%;
 		}
+
 		.awesome-button.end em:after {
 			opacity: 1;
 			-moz-transform: translateY(0);
@@ -153,15 +171,18 @@
 			-webkit-transform: translateY(0);
 			transform: translateY(0);
 		}
+
 		.awesome-button.end em:before {
 			-moz-transform: translateY(100%);
 			-ms-transform: translateY(100%);
 			-webkit-transform: translateY(100%);
 			transform: translateY(100%);
 		}
+
 		.awesome-button.off span:before {
 			background-color: #323232;
 		}
+
 		.awesome-button.off em {
 			background-color: #353535;
 			color: #424242;
@@ -170,13 +191,16 @@
 			-webkit-transform: translateY(3px);
 			transform: translateY(3px);
 		}
+
 		.awesome-button.off:hover span:before {
 			background-color: #2d2d2d;
 		}
+
 		.awesome-button.off:hover em {
 			background-color: #313131;
 			color: #3b3b3b;
 		}
+
 		.awesome-button.off:before {
 			-moz-transform: translateY(-3px);
 			-ms-transform: translateY(-3px);
@@ -184,12 +208,15 @@
 			transform: translateY(-3px);
 			background-color: rgba(0, 0, 0, 0.05);
 		}
+
 		.awesome-button:hover em {
 			background-color: #b90202;
 		}
-		.awesome-button b{
+
+		.awesome-button b {
 			margin-left: 2px;
 		}
+
 		.awesome-button span {
 			position: relative;
 			font-family: inherit;
@@ -197,6 +224,7 @@
 			width: 100%;
 			height: 100%;
 		}
+
 		.awesome-button span:before {
 			content: " ";
 			background-color: #8d0202;
@@ -209,6 +237,7 @@
 			-webkit-transition: -webkit-transform 0.2s ease-out, background 0.2s ease-out;
 			transition: transform 0.2s ease-out, background 0.2s ease-out;
 		}
+
 		.awesome-button span:after {
 			content: " ";
 			background-color: rgba(0, 0, 0, 0.2);
@@ -217,6 +246,7 @@
 			top: 3px;
 			width: 0;
 		}
+
 		.awesome-button span .i-svg {
 			width: 20px;
 			height: 20px;
@@ -224,6 +254,7 @@
 			vertical-align: text-top;
 			margin-top: -3px;
 		}
+
 		.awesome-button em {
 			display: table;
 			background-color: #c60202;
@@ -241,6 +272,7 @@
 			-webkit-transition: -webkit-transform 0.2s ease-out, background 0.2s ease-out, color 0.2s ease-out;
 			transition: transform 0.2s ease-out, background 0.2s ease-out, color 0.2s ease-out;
 		}
+
 		.awesome-button:before {
 			content: " ";
 			background-color: rgba(0, 0, 0, 0.3);
@@ -256,103 +288,133 @@
 			-webkit-transition: -webkit-transform 0.2s ease-out, background 0.2s ease-out;
 			transition: transform 0.2s ease-out, background 0.2s ease-out;
 		}
+
 		.awesome-button.tiny {
 			width: 95px;
 		}
+
 		.awesome-button.small {
 			width: 115px;
 		}
+
 		.awesome-button.medium {
 			width: 176px;
 		}
+
 		.awesome-button.large {
 			width: 260px;
 		}
+
 		.awesome-button.primary span:before {
 			background-color: #1f4781;
 		}
+
 		.awesome-button.primary em {
 			background-color: #325c99;
 		}
+
 		.awesome-button.facebook .i-svg {
 			margin-left: -2px;
 		}
+
 		.awesome-button.facebook span:before {
 			background-color: #1f4781;
 		}
+
 		.awesome-button.facebook em {
 			background-color: #325c99;
 		}
+
 		.awesome-button.twitter span:before {
 			background-color: #1774b9;
 		}
+
 		.awesome-button.twitter em {
 			background-color: #59adec;
 		}
+
 		.awesome-button.github span:before {
 			background-color: #353535;
 		}
+
 		.awesome-button.github em {
 			background-color: #4f4f4f;
 		}
+
 		.awesome-button.link span:before {
 			background-color: #353535;
 		}
+
 		.awesome-button.link em {
 			background-color: #4f4f4f;
 		}
+
 		.awesome-button.linkedin span:before {
 			background-color: #065786;
 		}
+
 		.awesome-button.linkedin em {
 			background-color: #1178b3;
 		}
+
 		.awesome-button.pink span:before {
 			background-color: #C2185B;
 		}
+
 		.awesome-button.pink em {
 			background-color: #E91E63;
 		}
+
 		.awesome-button.purple span:before {
 			background-color: #9C27B0;
 		}
+
 		.awesome-button.purple em {
 			background-color: #7B1FA2;
 		}
+
 		.awesome-button.teal span:before {
 			background-color: #00796B;
 		}
+
 		.awesome-button.teal em {
 			background-color: #009688;
 		}
+
 		.awesome-button.green span:before {
 			background-color: #388E3C;
 		}
+
 		.awesome-button.green em {
 			background-color: #4CAF50;
 		}
+
 		.awesome-button.grey span:before {
 			background-color: #455A64;
 		}
+
 		.awesome-button.grey em {
 			background-color: #607D8B;
 		}
+
 		.awesome-button.disabled span:before {
 			background-color: #666666;
 		}
+
 		.awesome-button.disabled em {
 			background-color: #888888;
 			color: #BFBFBF;
 		}
-		.awesome-button.disabled path{
+
+		.awesome-button.disabled path {
 			fill: #BFBFBF !important;
 		}
 
 		@-moz-document url-prefix() {
-			.awesome-button span:before{
+			.awesome-button span:before {
 				bottom: -5px;
 			}
-			.awesome-button:before{
+			.awesome-button:before {
 				left: 3px;
 				width: calc(100% - 6px);
 			}
@@ -381,7 +443,7 @@
 				"source": "M33.18,33.18v5.453L46.812,25L33.18,11.367v5.454l8.18,8.18L33.18,33.18z M16.82,33.18 v5.453L3.187,25L16.82,11.367v5.454L8.64,25L16.82,33.18z M16.82,30.453h5.453L33.18,19.547h-5.453L16.82,30.453z"
 			}
 			function get(icon) {
-				if(icons[icon]){
+				if (icons[icon]) {
 					return '<svg class="i-svg" height="50" version="1.1" width="50" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 50 50" space="preserve" data-icon="facebook," class="i-svg"><desc>Created with Snap</desc><defs></defs><path d="' + icons[icon] + '" fill="#ffffff"></path></svg>';
 				}
 				return false;
@@ -465,27 +527,27 @@
 				var icon = Icons.get(type);
 				el.class = "awesome-button " + type;
 				el.button.className = el.class;
-				if(icon){
+				if (icon) {
 					console.log(el.text);
 					el.text = el.text ? (icon + " <b>" + el.text + "</b>").trim() : icon;
 					el.em.innerHTML = el.text;
 				}
 			}
 		}
-		function checkColor(el){
+		function checkColor(el) {
 			var color = el.getAttribute("color");
-			if(color && color.match(/^(green|teal|purple|pink|grey)$/i)){
+			if (color && color.match(/^(green|teal|purple|pink|grey)$/i)) {
 				el.class = (el.class + " " + color).trim();
 				el.button.className = el.class;
 			}
 		}
-		function checkDisabled(el){
+		function checkDisabled(el) {
 			var disabled = el.getAttribute("disabled");
-			if(disabled !== null && disabled !== undefined){
+			if (disabled !== null && disabled !== undefined) {
 				el.disabled(true);
 			}
 		}
-		function action(el){
+		function action(el) {
 			if (el.getAttribute("href")) {
 				window.open(el.getAttribute("href"), el.getAttribute("target") || "");
 			} else {
@@ -495,7 +557,7 @@
 				}
 			}
 		}
-		function resize(el){
+		function resize(el) {
 			var width = el.button.clientWidth,
 				em = el.em,
 				w = el.getAttribute("width");
@@ -510,7 +572,7 @@
 					}
 					el.button.style.width = width + 30 + "px";
 				}
-				if(em.clientWidth > el.button.clientWidth){
+				if (em.clientWidth > el.button.clientWidth) {
 					while (em.clientWidth > el.button.clientWidth) {
 						width = width + 4;
 						el.button.style.width = width + "px";
@@ -521,23 +583,23 @@
 		}
 		function events(el) {
 			el.button.addEventListener("mouseleave", function (event) {
-				if(el.isDisabled == true) return;
+				if (el.isDisabled == true) return;
 				this.className = el.class;
 			});
 			el.button.addEventListener("mousemove", function (event) {
-				if(el.isDisabled == true) return;
+				if (el.isDisabled == true) return;
 				var left = this.getBoundingClientRect().left,
 					width = this.offsetWidth,
 					direction = "";
 				event.pageX < (left + (width * .3)) ?
 					direction = "left" :
-				event.pageX > (left + (width * .65)) ?
-					direction = "right" :
-				direction = "middle"
-				this.className = (this.className.replace(/middle|right|left/i,"").trim() + " " + direction).trim();
+					event.pageX > (left + (width * .65)) ?
+						direction = "right" :
+						direction = "middle"
+				this.className = (this.className.replace(/middle|right|left/i, "").trim() + " " + direction).trim();
 			});
 			el.button.addEventListener("mousedown", function (event) {
-				if(el.isDisabled == true) return;
+				if (el.isDisabled == true) return;
 				var self = this;
 				self.className = ((self.className || "") + " active").trim();
 				if (el.time) clearTimeout(element.time);
@@ -548,19 +610,19 @@
 					self.className = el.class + " middle";
 				}, 300);
 			});
-			el.button.addEventListener("click", function(event){
-				if(el.isDisabled == true) return;
+			el.button.addEventListener("click", function (event) {
+				if (el.isDisabled == true) return;
 				action(el);
 			});
 		}
-		function getContent(nodes){
+		function getContent(nodes) {
 			var text = []
-			for(var i in nodes){
-				if(nodes[i].nodeType == 1){
+			for (var i in nodes) {
+				if (nodes[i].nodeType == 1) {
 					text.push(nodes[i].outerHTML);
 					continue;
 				}
-				if(nodes[i].nodeType == 3){
+				if (nodes[i].nodeType == 3) {
 					text.push(nodes[i].textContent);
 					continue;
 				}
@@ -589,22 +651,22 @@
 			checkColor(this);
 			checkDisabled(this);
 			var self = this;
-			setTimeout(function(){
+			setTimeout(function () {
 				resize(self);
 				self.class = self.class + " v_";
 				self.button.className = self.class;
 			}, 1);
 		};
-		element.disabled = function(status){
-			if(status && !this.isDisabled){
+		element.disabled = function (status) {
+			if (status && !this.isDisabled) {
 				this.isDisabled = true;
 				this.class = this.class + " disabled middle";
 				this.button.className = this.class;
 				return;
 			}
-			if(!status && this.isDisabled){
+			if (!status && this.isDisabled) {
 				this.isDisabled = false;
-				this.class = this.class.replace(/(disabled|middle)/ig,"").trim();
+				this.class = this.class.replace(/(disabled|middle)/ig, "").trim();
 				this.button.className = this.class;
 				return;
 			}

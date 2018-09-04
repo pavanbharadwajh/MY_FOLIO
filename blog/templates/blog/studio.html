@@ -1,18 +1,14 @@
-{%extends "blog/header.html" %}
-
-{% block content %}
-       {% for post in object_list %}
-             <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <a class="lightbox" href="{{post.model_pic.url}}">
-                        <img src="{{post.model_pic.url}}" alt="{{post.id}}" style = "height:auto; max-width:100%;"/>
-                    </a>
-                    <div class="caption">
-                        <h3>{{post.title}}</h3>
-                        <p><strong>{{post.date}} | {{post.location}}</strong></p>
-                        <!--<p>{{post.description}}</p>-->
-                    </div>
-                </div>
-            </div>
-       {% endfor %}
-       {% endblock %}
+{%extends "blog/header.html" %} {% block content %} {% for post in object_list %}
+<div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+        <a class="lightbox" href="{{post.model_pic.url}}">
+            <img src="{{post.model_pic.url}}" alt="{{post.id}}" style="height:auto; max-width:100%;" />
+        </a>
+        <div class="caption">
+            <h3>{{post.title}}</h3>
+            <p><strong>{{post.date}} | {{post.location}}</strong></p>
+            <!--<p>{{post.description}}</p>-->
+        </div>
+    </div>
+</div>
+{% endfor %} {% endblock %}

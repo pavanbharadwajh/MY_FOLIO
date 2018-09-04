@@ -6,6 +6,6 @@ from .models import Post
 class PostModelAdmin(admin.ModelAdmin):
     list_display = ['title','date']
     class Meta:
-        model:Post
+        model=Post
 
 admin.site.register(Post,PostModelAdmin)
